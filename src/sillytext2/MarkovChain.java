@@ -34,12 +34,4 @@ public class MarkovChain {
 		}
 	}
 
-	public static void main(String[] args) {
-		MarkovChain mc = new MarkovChain();
-		mc.addTransition("a g", " ga");
-		mc.addTransition("a g", " gw");
-		for (int i = 0; i < 10; i++) {
-			System.out.print(mc.next("a g"));
-		}
-	}
 }

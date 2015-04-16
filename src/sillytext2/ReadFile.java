@@ -10,7 +10,6 @@ public class ReadFile {
 		try {
 			sc = new Scanner(new FileReader(file));
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		StringBuilder sb = new StringBuilder();

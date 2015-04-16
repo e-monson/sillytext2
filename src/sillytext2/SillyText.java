@@ -9,22 +9,18 @@ public class SillyText {
 			String current = input.substring(i, i + k);
 			String next = input.substring(i + 1, i + k + 1);
 			result.addTransition(current, next);
-//			System.out.println(current + " " + next);
 		}
-//		System.out.println("-----------------------------");
 		for (int i = 0; i < k; i++) {
 			String current = input.substring(length - (k - i))
 					+ input.substring(0, i);
 			String next = input.substring(length - (k - i) + 1)
 					+ input.substring(0, i + 1);
 			result.addTransition(current, next);
-//			System.out.println(current + " " + next);
 		}
 		return result;
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		String input = ReadFile.inFile(args[0]);
 		int k = Integer.parseInt(args[1]);
 		int chars = Integer.parseInt(args[2]);
